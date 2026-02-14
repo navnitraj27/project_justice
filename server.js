@@ -35,7 +35,7 @@ app.post('/ask', (req, res) => {
   } else {
     response = "This is not related to this";
   }
-
+res.setHeader('Content-Type', 'text/html');
   res.json({ response });
 });
 

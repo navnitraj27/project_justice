@@ -282,7 +282,7 @@
                 body: JSON.stringify({ query })
             });
             const data = await res.json();
-            document.getElementById('response').innerText = data.response;
+            document.getElementById('response').innerHTML = data.response;
         }
 
         const toggleBtn = document.getElementById('toggleBtn');
